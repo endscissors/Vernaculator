@@ -44,5 +44,12 @@ A python application to extracts text from images and translate the text to engl
 <pre>
       Import the model.pb file.
 </pre>
-**Step
+**Step 6:**
+<pre>
+      Upload the image.
+</pre>
+**Step 7:**
+<pre>
+      Keep pressing enter to move the detection box to the words which need to be translated. 
+</pre>
       
