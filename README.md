@@ -11,15 +11,13 @@ A python application to extracts text from images and translate the text to engl
       -numpy <br>
       -pytesseract <br>
  </pre>     
-**->Tesseract-OCR** <br>
-<pre>
-     Link:https://github.com/tesseract-ocr/tesseract/wiki/Downloads <br>
+**->Tesseract-OCR :** [Tesseract OCR Mannhiem](https://github.com/tesseract-ocr/tesseract/wiki/Downloads) <br>
+<pre>     
      Do ensure that you download the list of language package you need. <br>
      Add a path in the system environment variable for access. <br>
 </pre>
-**->EAST Text detector Model** <br>
+**->EAST Text detector Model :** [Download](https://drive.google.com/file/d/1ItInG03matiMjpuX_ozsG9mryOvyHalv/view?usp=sharing) <br>
 <pre>
-    Link:https://drive.google.com/file/d/1ItInG03matiMjpuX_ozsG9mryOvyHalv/view?usp=sharing <br>
     Download this for text detection. It is a pre-trained model to detect text from image. <br>
 </pre>
 
