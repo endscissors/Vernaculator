@@ -50,4 +50,5 @@ A python application to extracts text from images and translate the text to engl
 <pre>
       Keep pressing enter to move the detection box to the words which need to be translated. 
 </pre>
-      
+  https://www.learnopencv.com/deep-learning-based-text-detection-using-opencv-c-python/
+  https://www.geeksforgeeks.org/python-gui-tkinter/
