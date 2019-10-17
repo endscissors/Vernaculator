@@ -6,7 +6,7 @@ A python application to extracts text from images and translate the text to engl
 <pre>
       -imutils <br>
       -googletrans <br>
-      -image <br>
+      -pillow <br>
       -OpenCV2(cv2) <br>
       -numpy <br>
       -pytesseract <br>
