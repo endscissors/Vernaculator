@@ -28,7 +28,7 @@ A python application to extracts text from images and translate the text to engl
 </pre>
 **Step 2:**
 <pre>
-      Run the .py file in a command prompt or an anaconda command prompt(prefered).
+      Run the db.py file first and then Beta_2.1 using command prompt or anaconda command prompt(prefered).
 </pre>
 **Step 3:**
 <pre>
