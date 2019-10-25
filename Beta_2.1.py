@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import filedialog
+import sqlite3
 from PIL import Image
 import time
 import io
@@ -15,7 +16,9 @@ window = Tk()
 window.title("Vernaculator")
  
 window.geometry('400x400')
- 
+
+conn = sqlite3.connect('Language.db') 
+c = conn.cursor() 
 
 input_text = tkinter.StringVar()
 e1 = Entry(window,textvariable=input_text) 
@@ -58,6 +61,8 @@ def action():
             img=cv2.imread(filename)
             print(lan)
             tex=pytesseract.image_to_string(Image.open(filename),lang=lan)
+            #df = DataFrame(c.fetchall(), columns=['Recongnised_Text'])
+            #print (df)
             language=''
             if lan=='mal':
                 language='Malayalam'
@@ -168,6 +173,11 @@ def action():
             tr2=translator.translate(tex)
             str1=str(tr1.src)
             str2=str(tr2.text)
+            c.execute("INSERT INTO LANGUAGE(Recongnised_text) VALUES(?);",[tex])
+            c.execute("INSERT INTO TRANSLATED(Translated_text) VALUES(?);",[str2])
+            print("uploaded")
+            conn.commit()
+            conn.close()
             lbl4=Label(window,text="Language Detected: "+language,bd=1,anchor=E,justify=RIGHT)
             lbl4.grid(column=0,row=9)
             lbl5=Label(window,text="Translated Text: "+str2,bd=1,anchor=E,justify=RIGHT)
