@@ -18,7 +18,7 @@ A python application to extracts text from images and translate the text to engl
 </pre>
 **->EAST Text Detector Model:** [Download](https://drive.google.com/file/d/1ItInG03matiMjpuX_ozsG9mryOvyHalv/view?usp=sharing) <br>
 <pre>
-    Download this for text detection. It is a pre-trained model to detect text from image. <br>
+    Download this for text detection(Link given). It is a pre-trained model to detect text from image. <br>
 </pre>
 
 ## How To Run the program:
